@@ -9,7 +9,7 @@ export const Header = () => {
             <HeaderElement><a className="hover:bg-slate-100 rounded-md p-1" href="#who_we_are">Who We are</a></HeaderElement>
             <HeaderElement><a className="hover:bg-slate-100 rounded-md p-1" href="#what_we_do">What We Do</a></HeaderElement>
             <div className="flex-grow"></div>
-            <HeaderElement><a className="p-1 text-xl rounded-md hover:bg-slate-800 bg-slate-950 text-white" href="/signup_waitlist">Sign up For waitlist</a></HeaderElement>
+            <HeaderElement><a className="py-1 px-2 text-xl rounded-md hover:bg-slate-800 bg-slate-950 text-white" href="/signup_waitlist">Join waitlist</a></HeaderElement>
         </div>
     )
 }
