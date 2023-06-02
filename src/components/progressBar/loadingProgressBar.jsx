@@ -27,7 +27,7 @@ export const LoadingProgressBar = ({run, totalDuration = 5000, height= "1rem", c
         }
     }, [run])
     return (
-        <div style={{"height": height}} className="flex progress bg-slate-200 bg-transparent h-4 rounded-md z-0 overflow-hidden">
+        <div style={{"height": height}} className="flex progress bg-slate-200 h-4 w-full rounded-md z-0 overflow-hidden">
             <div style={width["style"]} className="flex flex-col justify-center progress-bar transition-width duration-100 ease-in rounded-md z-100"></div>
         </div>
     )
