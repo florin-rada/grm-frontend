@@ -4,7 +4,7 @@ import { StaticProgressBar } from "../progressBar/staticProgressBar";
 import { SignupButton } from "../signup_button/signup_button";
 
 export const Description = () => {
-    return <div className="m-3 flex flex-grid bg-gradient-to-tr from-white via-65% via-sky-200 to-orange-200 ">
+    return <div className="flex flex-grid bg-gradient-to-tr from-white via-65% via-sky-200 to-orange-200 ">
         <div className="flex flex-row p-2 space-x-5">
             <div className="flex flex-grow"></div>
             <div className="flex flex-col basis-1/2 justify-center">
