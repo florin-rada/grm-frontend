@@ -5,16 +5,14 @@ import {Header} from './components/header/header'
 import { Description } from './components/description/description'
 import { Features } from './components/features.jsx/features'
 import { Footer } from './components/footer/footer'
+import { Landing } from './pages/landing/landing'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Header></Header>
-      <Description></Description>
-      <Features></Features>
-      <Footer></Footer>
+      <Landing></Landing>
     </>
   )
 }
