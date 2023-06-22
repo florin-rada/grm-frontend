@@ -10,7 +10,7 @@ export const Header = () => {
             <HeaderElement><a className="hover:bg-slate-100 rounded-md p-1" href="#who_we_are">Who We are</a></HeaderElement>
             <HeaderElement><a className="hover:bg-slate-100 rounded-md p-1" href="#what_we_do">What We Do</a></HeaderElement>
             <div className="flex-grow"></div>
-            <HeaderElement><SignupButton></SignupButton></HeaderElement>
+            <HeaderElement><SignupButton id="1"></SignupButton></HeaderElement>
             <HeaderElement><a href="login" className="hover:bg-slate-100 rounded-md p-1">Sign In</a></HeaderElement>
         </div>
     )

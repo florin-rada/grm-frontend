@@ -18,7 +18,7 @@ export const Landing = () => {
         <>
             <Header></Header>
             <Description></Description>
-            <Features></Features>
+            {/* <Features></Features> */}
             <Footer></Footer>
         </>
     );

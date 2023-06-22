@@ -1,5 +1,6 @@
 import React from "react";
 import { LoadingProgressBar } from "../progressBar/loadingProgressBar";
+import { SignupButton } from "../signup_button/signup_button";
 
 export const Features = () => {
 
@@ -10,12 +11,13 @@ export const Features = () => {
             <div className="flex flex-col flex-grow basis-1/3">
                 <div className="flex flex-row">
                     <div className="flex flex-col basis-1/3 justify-center">
-                        <div>
+                        <div className="p-2">
                             <h2 className="text-2xl">Centralized Runner Management</h2>
                         </div>
-                        <div>
+                        <div className="p-2">
                             <h3 className="text-xl">View and manage all your GitLab runners in one place.</h3>
                         </div>
+                        <div className="p-2"><SignupButton id="2"></SignupButton></div>
                     </div>
                     <div className="flex flex-col basis-2/3">
                         <img src="public/45267e.svg" alt="my_feature_image"></img>

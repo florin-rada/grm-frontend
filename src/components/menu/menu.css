@@ -1,0 +1,5 @@
+.selected {
+    border-color: blueviolet;
+    border: .1rem;
+    border-style:solid;
+}
