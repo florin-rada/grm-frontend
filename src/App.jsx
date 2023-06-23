@@ -6,7 +6,7 @@ import { Description } from './components/description/description'
 import { Features } from './components/features.jsx/features'
 import { Footer } from './components/footer/footer'
 import { Landing } from './pages/landing/landing'
-import { RouterProvider, createRoutesFromElements, redirect } from 'react-router-dom'
+import { RouterProvider, createRoutesFromElements, redirect, createBrowserRouter, Route } from 'react-router-dom'
 import { Main } from './pages/main/main'
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
     <>
       <RouterProvider router={createBrowserRouter(
         createRoutesFromElements(
-          <Route path="/" element={Main}>
+          <Route path="/" element={<Main/>}>
             <Route path="/about" element={<Landing/>}></Route>
           </Route>
         )

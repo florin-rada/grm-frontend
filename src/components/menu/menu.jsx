@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGear, faUser } from "@fortawesome/free-solid-svg-icons";
 import { HeaderElement } from "../header/headerElement";
 import {Link} from "react-router-dom";
-
+import { Logo } from "../logo/logo";
 
 export const Menu = ({selected}) => {
     const settingsClassName = selected.startsWith("/settings") ? "selected": "";
@@ -11,7 +11,7 @@ export const Menu = ({selected}) => {
     const profileClassName = selected.startsWith("/profile") ? "selected": "";
 
     return (
-        <div className="sticky top-0 bg-white flex flex-row justify-center space-x-4 py-3 px-4 items-center">
+        <div className="sticky top-0 bg-white flex flex-row justify-center space-x-4 py-3 px-4 items-center z-50">
             <HeaderElement><Logo></Logo></HeaderElement>
             <HeaderElement ><Link className={reportsClassName} to="/reports">Reports</Link></HeaderElement>
             <div className="flex-grow"></div>
@@ -26,5 +26,5 @@ export const Menu = ({selected}) => {
                 </Link>
             </HeaderElement>
         </div>
-    )
+    );
 }
