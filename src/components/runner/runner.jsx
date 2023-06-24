@@ -1,6 +1,7 @@
 import { faGear, faCircleCheck, faXmark, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
+import { Modal } from "../modal/modal";
 
 export const Runner = ({name}) => {
     const [showDetails, setShowDetails] = useState(false);
@@ -9,9 +10,13 @@ export const Runner = ({name}) => {
         setShowDetails(true);
     }
 
+    const closeRunnerDetails = () => {
+        setShowDetails(false);
+    }
+
     return (
         <div className="flex flex-col rounded-lg min-w-min border border-slate-500 dark:border-slate-200">
-            <div className="flex header border-b border-b-slate-400 p-2 justify-center hover:cursor-pointer">
+            <div onClick={onCardClick} className="flex header border-b border-b-slate-400 p-2 justify-center hover:cursor-pointer">
                 <span>{name}</span>
             </div>
             <div className="flex flex-col">
@@ -55,8 +60,8 @@ export const Runner = ({name}) => {
                     <span>Job 1</span>
                     </div>
                 </div>
-                
             </div>
+            <Modal show={showDetails} handleOnClose={closeRunnerDetails}></Modal>
         </div>
     )
 }

@@ -11,7 +11,7 @@ export const Menu = ({selected}) => {
     const profileClassName = selected.startsWith("/profile") ? "selected": "";
 
     return (
-        <div className="sticky top-0 bg-white flex flex-row justify-center space-x-4 py-3 px-4 items-center z-50">
+        <div className="sticky top-0 bg-white flex flex-row justify-center space-x-4 py-3 px-4 items-center z-10">
             <HeaderElement><Logo></Logo></HeaderElement>
             <HeaderElement ><Link className={reportsClassName} to="/reports">Reports</Link></HeaderElement>
             <div className="flex-grow"></div>
