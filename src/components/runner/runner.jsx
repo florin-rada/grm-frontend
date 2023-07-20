@@ -1,7 +1,8 @@
 import { faGear, faCircleCheck, faXmark, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
-import { Dialog } from "@headlessui/react";
+import React, { Fragment, useState } from "react";
+import { Dialog, Transition } from "@headlessui/react";
+import { RunnerDetails } from "../runner_details/runner_details";
 
 export const Runner = ({name}) => {
     const [showDetails, setShowDetails] = useState(false);
@@ -61,25 +62,7 @@ export const Runner = ({name}) => {
                     </div>
                 </div>
             </div>
-            <Dialog open={showDetails} onClose={closeRunnerDetails} className="relative z-50">
-                <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
-                <div className="fixed inset-0 flex items-center justify-center p-4">
-                    <Dialog.Panel>
-                        <Dialog.Title>Deactivate account</Dialog.Title>
-                        <Dialog.Description>
-                        This will permanently deactivate your account
-                        </Dialog.Description>
-
-                        <p>
-                        Are you sure you want to deactivate your account? All of your data
-                        will be permanently removed. This action cannot be undone.
-                        </p>
-
-                        <button onClick={() => closeRunnerDetails()}>Deactivate</button>
-                        <button onClick={() => closeRunnerDetails()}>Cancel</button>
-                    </Dialog.Panel>
-                </div>
-            </Dialog>
+            <RunnerDetails show={showDetails} handleClose={closeRunnerDetails}/>
         </div>
     )
 }
